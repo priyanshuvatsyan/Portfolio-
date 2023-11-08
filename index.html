@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyanshu Vatsyan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!--<div id="header">-->
+    <div class="container">
+        <nav>
+            <img class="logo" src="images/logo.png" alt="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <img class="icon" id="cross" src="images/cross.png" alt="" onclick="closemenu()">
+            </ul>
+            <img class="icon" id="lines" src="images/white-hamburger-menu-icon-24.jpg" alt="" onclick="openmenu()">
+        </nav>
+        <!---->
+        <div class="container2">
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi, I am <span id="typed-text"></span></h1>
+
+            </div>
+            <!-- <div class="photo">
+                <img src="images/bg.jpg" alt="">
+            </div>-->
+        </div>
+    </div>
+    </div>
+
+
+    <!----------------------------About------------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <!--  <img src="images/bg2-removebg-preview (1).png" alt="">-->
+                    <img src="images/bg1O.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As a computer science student, I'm passionate about coding, problem-solving, and staying up-to-date with industry trends. Eager to contribute my technical skills and creativity to a dynamic team and make a meaningful impact in the field of computer science.</p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links"></p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>HTML CSS JS</li>
+                            <li><span>Data Structure & Algorithm</span><br>Java</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>2021-Current</span><br>Bachelors in Computer Science Engineering</li>
+                            <li><span>2019-2021</span><br>Intermediate(HPBOSE)</li>
+                            <li><span> - 2019</span><br>Intermediate(HPBOSE)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------Portfolio-------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/img search.png" alt="">
+                    <div class="layer">
+                        <h3>Image Search App</h3>
+                        <p>This is a simple Web app wich gives results based upon the input
+                             entered by the user</p>
+                      <a href="#"><img src="images/link-solid.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/news.png" alt="">
+                    <div class="layer">
+                        <h3>News Website</h3>
+                        <p>This is a simple Web News application</p>
+                        <a href="#"><img src="images/link-solid.svg" alt=""></a> 
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/to do.png" alt="">
+                    <div class="layer">
+                        <h3>To-Do app</h3>
+                        <p>A simple To Do app in which user can add their pending tasks</p>
+                        <a href="https://priyanshuvatsyan.github.io/To-Do/"><img src="images/link-solid.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/weather.png" alt="">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>This is a simple Web app which tells weather based upon the city enteredby user</p>
+                        <a href="https://priyanshuvatsyan.github.io/Weather-app/"><img src="images/link-solid.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+
+     <!----------------------------Contact------------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <img class="mail" src="images/paper-plane-regular.svg" alt=""> priyanshuvatsyan@gmail.com</p>
+                <p><img class="call" src="images/phone-solid.svg" alt=""> 7876641139</p>
+                <div class="social-icons">
+                    <a href=""><img src="images/facebook (2).svg" alt=""></a>
+                    <a href="https://www.instagram.com/priyanshu_vatsyan/"><img src="images/instagram.svg" alt=""></a>
+                    <a href="https://www.linkedin.com/in/priyanshu-vatsyan-4851b3287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="images/linkedin.svg" alt=""></a>
+                    <a href="mailto:priyanshuvatsyan@gmail.com"><img src="images/at-solid.svg" alt=""></a>
+                </div>
+                <a class="btn btn2" href="images/My Resume.pdf" download>Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Messege" id="" cols="" rows="6" placeholder="Your Messege"></textarea>
+                    <button class="btn btn2" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright ©Priyanshu Vatsyan </p>
+    </div>
+</div>
+
+
+    <script>
+        const text = "PRIYANSHU"; // Text you want to display
+        let charIndex = 0;
+        const typedText = document.getElementById("typed-text");
+
+        function type() {
+            if (charIndex < text.length) {
+                typedText.textContent += text.charAt(charIndex);
+                charIndex++;
+                setTimeout(type, 100); // Typing speed in milliseconds (adjust as needed)
+            }
+        }
+
+        // Start the animation
+        type();
+
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontent = document.getElementsByClassName("tab-content");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontents of tabcontent) {
+                tabcontents.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right ="0";
+    }
+    
+    function closemenu(){
+        sidemenu.style.right ="-200px";
+    }
+</script>
+</body>
+
+</html>
